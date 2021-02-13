@@ -36,7 +36,7 @@
   export default {
     name: "Chapter05",
     components: {
-      ButtonCollapseItem
+      ButtonCollapseItem,
     },
     data() {
       return {

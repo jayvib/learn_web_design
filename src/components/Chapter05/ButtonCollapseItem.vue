@@ -11,7 +11,6 @@
       class="mt-2">
       <component :is="component"></component>
     </b-collapse>
-    <b-colapse
   </div>
 </template>
 
