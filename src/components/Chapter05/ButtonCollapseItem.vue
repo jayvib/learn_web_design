@@ -1,11 +1,17 @@
 <template>
   <div>
-    <b-button @click="toggleCollapses(idx)" variant="dark" class="mt-2 d-block">
+    <b-button
+      @click="toggleCollapses(idx)"
+      variant="dark"
+      class=" width-25 mt-2 d-block">
       <slot name="header"></slot>
     </b-button>
-    <b-collapse :id="idx" class="width-25 mt-2">
-      <slot name="body"></slot>
+    <b-collapse
+      :id="idx"
+      class="mt-2">
+      <component :is="component"></component>
     </b-collapse>
+    <b-colapse
   </div>
 </template>
 
@@ -13,7 +19,7 @@
 
   export default {
     name: "ButtonCollapseItem",
-    props: ['idx'],
+    props: ['idx', 'component'],
     methods: {
       toggleCollapses(id) {
         this.$root.$emit('bv::toggle::collapse', id)

@@ -1,0 +1,28 @@
+<template>
+  <div>
+    <h2>Grouping Content</h2>
+
+    <h3>Blockquote</h3>
+    <p>Renowned type designer, Matthew Carter, has this to say about his
+      profession:
+    </p>
+    <blockquote>
+      <p>Our alphabet hasn't changed in eons; there isn't much latitude in
+        what a designer can do with the individual letters.</p>
+      <p>Much like a piece of classical music, the score is written
+        down. It's not something that is tampered with, and yet, each
+        conductor interprets that score differently. There is tension in
+        the interpretation.</p>
+    </blockquote>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: "BlockQuote"
+  }
+</script>
+
+<style scoped>
+
+</style>
