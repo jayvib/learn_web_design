@@ -6,10 +6,43 @@
         <b-navbar-nav>
           <b-nav-item @click="$router.push('/ch05')">Chapter05</b-nav-item>
         </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/ch06')">Chapter06</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/ch07')">Chapter07</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/ch08')">Chapter08</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/ch09')">Chapter09</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/ch10')">Chapter10</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/ch11')">Chapter11</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/ch12')">Chapter12</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/ch13')">Chapter13</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/jenkitchen')">Jen Kitchen</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/blackgoosebistrogallery')">Black Goose Bistro Gallery</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/blackgoosebistro')">Black Goose Bistro</b-nav-item>
+        </b-navbar-nav>
       </b-collapse>
     </b-navbar>
     <div class="container">
-      <router-view></router-view>
+      <router-view class="mt-4"></router-view>
     </div>
   </div>
 </template>
@@ -23,7 +56,23 @@ export default {
 </script>
 
 <style>
+  html {
+    font-size: 100%;
+  }
+
   .width-25 {
     width: 25%;
   }
+
+  .emoji-bullet li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-indent: -0.7rem;
+  }
+
+  .emoji-bullet li::before {
+    content: "👉"
+  }
+
 </style>

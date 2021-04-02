@@ -1,4 +1,4 @@
-<template>
+<template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
   <div>
     <h1 class="text-center mt-2">Chapter 05</h1>
     <hr/>
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-  import ButtonCollapseItem from "./ButtonCollapseItem";
+  import ButtonCollapseItem from "../ButtonCollapseItem";
   import ListUnordered from "./List/ListUnordered";
   import ListOrdered from "./List/ListOrdered";
   import ListDescription from "./List/ListDescription";
@@ -32,6 +32,17 @@
   import ExerciseFiveOne from "./Exercises/ExerciseFiveOne";
   import Main from "./HTML5/Main";
   import Header from "./HTML5/Header";
+  import Footer from "./HTML5/Footer";
+  import Section from "./HTML5/Section";
+  import Article from "./HTML5/Article";
+  import Aside from "./HTML5/Aside";
+  import Navigation from './HTML5/Navigation.vue';
+import Address from './HTML5/Address.vue';
+import Inline from './Inline/Inline.vue';
+  import ExerciseFiveTwo from "./Exercises/ExerciseFiveTwo";
+  import GenericElements from "./GenericElements/GenericElements"
+  import Aria from "./Aria/Aria";
+  import ExerciseFiveThree from "./Exercises/ExerciseFiveThree";
 
   export default {
     name: "Chapter05",
@@ -49,9 +60,20 @@
           { name: 'Figure', component: Figure },
           { name: 'Main', component: Main },
           { name: 'Header', component: Header },
+          { name: 'Footer', component: Footer },
+          { name: 'Section', component: Section },
+          { name: 'Article', component: Article },
+          { name: 'Aside', component: Aside },
+          { name: 'Navigation', component: Navigation },
+          { name: 'Address', component: Address },
+          { name: 'Inline', component: Inline },
+          { name: 'GenericElements', component: GenericElements },
+          { name: 'ARIA', component: Aria }
         ],
         exercises: [
           { name: 'Exercise-5-1', component: ExerciseFiveOne },
+          { name: 'Exercise-5-2', component: ExerciseFiveTwo },
+          { name: 'Exercise-5-3', component: ExerciseFiveThree },
         ]
       }
     }

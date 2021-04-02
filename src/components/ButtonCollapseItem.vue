@@ -2,7 +2,7 @@
   <div>
     <b-button
       @click="toggleCollapses(idx)"
-      variant="dark"
+      :variant="randomVariant"
       class=" width-25 mt-2 d-block">
       <slot name="header"></slot>
     </b-button>
@@ -16,12 +16,26 @@
 
 <script>
 
+  import {getRandomVariant} from "../lib/color";
+
   export default {
     name: "ButtonCollapseItem",
-    props: ['idx', 'component'],
+    props: {
+      idx: String,
+      component: Object,
+      variant: {
+        type: String,
+        default: 'success'
+      }
+    },
     methods: {
       toggleCollapses(id) {
         this.$root.$emit('bv::toggle::collapse', id)
+      },
+    },
+    computed: {
+      randomVariant() {
+        return getRandomVariant()
       }
     }
   }

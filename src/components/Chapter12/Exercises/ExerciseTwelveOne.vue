@@ -1,0 +1,122 @@
+<template>
+  <div class="container body">
+    <div id="info">
+      <h1>Black Goose Bistro &bull; Summer Menu</h1>
+      <p>Baker's Corner, Seekonk, Massachusetts<br>
+        <span class="label">Hours: Monday through Thursday:</span> 11 to 9, <span class="label">Friday and Saturday;</span> 11 to midnight</p>
+    </div>
+
+    <div id="appetizers">
+      <h2>Appetizers</h2>
+      <p>This season, we explore the spicy flavors of the southwest in our appetizer collection.</p>
+
+      <dl>
+        <dt>Black bean purses</dt>
+        <dd>Spicy black bean and a blend of mexican cheeses wrapped in sheets of phyllo and baked until golden. <span class="price">$3.95</span></dd>
+
+        <dt class="newitem">Southwestern napoleons with lump crab &mdash; <strong>new item!</strong></dt>
+        <dd>Layers of light lump crab meat, bean and corn salsa, and our handmade flour tortillas. <span class="price">$7.95</span></dd>
+      </dl>
+    </div>
+
+    <div id="entrees">
+
+      <h2>Main courses</h2>
+      <p>Big, bold flavors are the name of the game this summer. Allow us to assist you with finding the perfect wine.</p>
+
+
+      <dl>
+
+        <dt class="newitem">Jerk rotisserie chicken with fried plantains &mdash; <strong>new item!</strong></dt>
+        <dd>Tender chicken slow-roasted on the rotisserie, flavored with spicy and fragrant jerk sauce and served with fried plantains and fresh mango. <strong>Very spicy.</strong> <span class="price">$12.95</span></dd>
+
+        <dt>Shrimp sate kebabs with peanut sauce</dt>
+        <dd>Skewers of shrimp marinated in lemongrass, garlic, and fish sauce then grilled to perfection. Served with spicy peanut sauce and jasmine rice. <span class="price">$12.95</span></dd>
+
+        <dt>Grilled skirt steak with mushroom fricasee</dt>
+        <dd>Flavorful skirt steak marinated in Asian flavors grilled as you like it<sup>*</sup>. Served over a blend of sauteed wild mushrooms with a side of blue cheese mashed potatoes. <span class="price">$16.95</span></dd>
+      </dl>
+
+    </div>
+
+    <p class="warning"><sup>*</sup> We are required to warn you that undercooked food is a health risk.</p>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: "ExerciseTwelveOne"
+  }
+</script>
+
+<style scoped>
+  .body {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.75em;
+  }
+
+  h1 {
+    font: bold 1.5em "Marko One", Gergia, serif;
+    color: olive;
+    text-shadow: .05em .05em .1em lightslategray;
+  }
+
+  h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    color: olive;
+  }
+
+  h1, h2, #info {
+    text-align: center;
+  }
+
+  /*select the paragraph after h2*/
+  h2 + p {
+    font-size: 1em;
+    text-align: center;
+    font-style: italic;
+  }
+
+  dt {
+    font-weight: bold;
+    color: sienna;
+  }
+
+  strong {
+    font-style: italic;
+  }
+
+  dt strong {
+    color: tomato;
+  }
+
+  #info p {
+    font-style: italic;
+    color: gray;
+  }
+
+  .price {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    color: gray;
+  }
+
+  .label {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-style: normal
+  }
+
+  .warning {
+    color: tomato;
+  }
+
+  p.warning sup {
+    color: red;
+    font-size: small;
+  }
+
+</style>
