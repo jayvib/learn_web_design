@@ -24,6 +24,10 @@ import Chapter10 from "../components/Chapter10/Chapter10";
 import Chapter11 from "../components/Chapter11/Chapter11";
 import Chapter12 from "../components/Chapter12/Chapter12";
 import Chapter13 from "../components/Chapter13/Chapter13";
+import SummerMenu from "../components/Chapter13/Exercises/SummerMenu/SummerMenu";
+import Chapter14 from "../components/Chapter14/Chapter14";
+import Chapter15 from "../components/Chapter15/Chapter15";
+import Chapter16 from "../components/Chapter16/Chapter16";
 
 Vue.use(VueRouter)
 
@@ -80,10 +84,18 @@ const blackGooseBistro = [
   }
 ]
 
+const summerMenu = [
+  {
+    path: '/summermenu',
+    component: SummerMenu,
+  }
+]
+
 const routes = [
   ...jenKitchenRoutes,
   ...blackGooseBistro,
   ...blackGooseBistroGallery,
+  ...summerMenu,
   {
     path: '/ch05',
     component: Chapter05
@@ -119,6 +131,18 @@ const routes = [
   {
     path: '/ch13',
     component: Chapter13,
+  },
+  {
+    path: '/ch14',
+    component: Chapter14,
+  },
+  {
+    path: '/ch15',
+    component: Chapter15,
+  },
+  {
+    path: '/ch16',
+    component: Chapter16,
   },
   {
     path: '*',

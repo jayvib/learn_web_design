@@ -31,6 +31,15 @@
           <b-nav-item @click="$router.push('/ch13')">Chapter13</b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav>
+          <b-nav-item @click="$router.push('/ch14')">Chapter14</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/ch15')">Chapter15</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/ch16')">Chapter16</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
           <b-nav-item @click="$router.push('/jenkitchen')">Jen Kitchen</b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav>
@@ -38,6 +47,9 @@
         </b-navbar-nav>
         <b-navbar-nav>
           <b-nav-item @click="$router.push('/blackgoosebistro')">Black Goose Bistro</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/summermenu')">Summer Menu</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

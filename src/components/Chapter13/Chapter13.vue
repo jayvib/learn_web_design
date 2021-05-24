@@ -35,6 +35,9 @@
   import PsuedoClass from "./PsuedoClass";
   import PsuedoElement from "./PsuedoElement";
   import AttributeSelector from "./AttributeSelector";
+  import BackgroundImage from "./BackgroundImage";
+  import BackgroundPosition from "./BackgroundPosition";
+  import Gradient from "./Gradient";
 
   export default {
     name: "Chapter11",
@@ -52,6 +55,9 @@
           { name: 'Psuedo-Classes', component: PsuedoClass },
           { name: 'Psuedo-Elements', component: PsuedoElement },
           { name: 'Attribute Selectors', component: AttributeSelector },
+          { name: 'Background Image', component: BackgroundImage },
+          { name: 'Background Position', component: BackgroundPosition },
+          { name: 'Gradient', component: Gradient },
         ],
         exercises: [
         ],
