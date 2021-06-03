@@ -40,6 +40,12 @@
           <b-nav-item @click="$router.push('/ch16')">Chapter16</b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav>
+          <b-nav-item @click="$router.push('/ch17')">Chapter 17</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push('/ch18')">Chapter 18</b-nav-item>
+        </b-navbar-nav>
+        <b-navbar-nav>
           <b-nav-item @click="$router.push('/jenkitchen')">Jen Kitchen</b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav>

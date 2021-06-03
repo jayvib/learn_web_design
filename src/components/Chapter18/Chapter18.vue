@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="text-center mt-2">Chapter 16: Layout and Flexbox</h1>
+    <h1 class="text-center mt-2">Chapter 18: Transitions, Transforms, and Animations</h1>
     <hr/>
     <div v-if="components.length > 0">
       <ButtonCollapseItem
@@ -27,19 +27,17 @@
 
 <script>
   import ButtonCollapseItem from "../ButtonCollapseItem"
-  import Flex from "./Flex";
-  import Grid from "./Grid";
+  import Basic from "./Basic";
 
   export default {
-    name: "Chapter16",
+    name: "Chapter18",
     components: {
       ButtonCollapseItem
     },
     data() {
       return {
         components: [
-          { name: "Flex", component: Flex },
-          { name: "Grid", component: Grid },
+          { name: 'Basic', component: Basic },
         ],
         exercises: [
         ],

@@ -28,6 +28,8 @@ import SummerMenu from "../components/Chapter13/Exercises/SummerMenu/SummerMenu"
 import Chapter14 from "../components/Chapter14/Chapter14";
 import Chapter15 from "../components/Chapter15/Chapter15";
 import Chapter16 from "../components/Chapter16/Chapter16";
+import Chapter17 from "../components/Chapter17/Chapter17";
+import Chapter18 from "../components/Chapter18/Chapter18";
 
 Vue.use(VueRouter)
 
@@ -143,6 +145,14 @@ const routes = [
   {
     path: '/ch16',
     component: Chapter16,
+  },
+  {
+    path:'/ch17',
+    component: Chapter17,
+  },
+  {
+    path:'/ch18',
+    component: Chapter18,
   },
   {
     path: '*',
